@@ -21,7 +21,7 @@ pipeline {
                             sshPublisherDec(
                                 configName: 'staging',
                                 sshCredentials: [
-                                    username: "$USERNAME"
+                                    username: "$USERNAME",
                                     encryptedPassphrase: "$USERPASS"
                                 ],
 
@@ -56,7 +56,7 @@ pipeline {
                             sshPublisherDec(
                                 configName: 'production',
                                 sshCredentials: [
-                                    username: "$USERNAME"
+                                    username: "$USERNAME",
                                     encryptedPassphrase: "$USERPASS"
                                 ],
 
